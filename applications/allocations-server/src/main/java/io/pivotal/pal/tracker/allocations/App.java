@@ -9,6 +9,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.client.RestOperations;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
+
 
 import java.util.TimeZone;
 
@@ -17,6 +21,9 @@ import java.util.TimeZone;
 @EnableEurekaClient
 @EnableCircuitBreaker
 @ComponentScan({"io.pivotal.pal.tracker.allocations","io.pivotal.pal.tracker.restsupport"})
+@EnableWebSecurity
+@EnableResourceServer
+@EnableOAuth2Client
 public class App {
 
     public static void main(String[] args) {
