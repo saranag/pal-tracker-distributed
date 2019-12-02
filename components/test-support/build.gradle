@@ -3,4 +3,7 @@ dependencies {
     compile "org.springframework:spring-jdbc:$springVersion"
     compile "mysql:mysql-connector-java:$mysqlVersion"
     compile "junit:junit:$junitVersion"
+    compile "org.springframework:spring-context:$springVersion"
+    compile "org.springframework.cloud:spring-cloud-commons:$springCloudCommonsVersion"
+
 }

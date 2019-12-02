@@ -14,9 +14,9 @@ buildscript {
         junitVersion = "4.12"
         okhttpVersion = "3.12.0"
         jsonPathVersion = "2.4.0"
-        springCloudVersion = "Finchley.RELEASE"
-        springCloudServicesClientLibrariesVersion = "2.0.3.RELEASE"
-        springCommons = "2.0.3.RELEASE"
+        springCloudVersion = "Finchley.SR2"
+        springCloudServicesClientLibrariesVersion = "2.0.2.RELEASE"
+        springCloudCommonsVersion = "2.0.0.RELEASE"
     }
 
     repositories {
@@ -48,7 +48,7 @@ subprojects {
         compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
         compile "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
         compile "org.slf4j:slf4j-api:$slf4jVersion"
-
+        compile "org.springframework.cloud:spring-cloud-commons"
         testCompile "junit:junit:$junitVersion"
         testCompile "org.mockito:mockito-core:$mockitoVersion"
         testCompile "org.assertj:assertj-core:$assertJVersion"
