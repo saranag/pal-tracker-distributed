@@ -24,11 +24,11 @@ import java.util.TimeZone;
 @EnableWebSecurity
 @EnableResourceServer
 @EnableOAuth2Client
-public class App {
+public class Application {
 
     public static void main(String[] args) {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
     @Bean

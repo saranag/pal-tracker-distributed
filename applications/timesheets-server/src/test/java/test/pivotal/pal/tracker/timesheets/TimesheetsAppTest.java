@@ -1,6 +1,6 @@
 package test.pivotal.pal.tracker.timesheets;
 
-import io.pivotal.pal.tracker.timesheets.App;
+import io.pivotal.pal.tracker.timesheets.Application;
 import org.junit.Test;
 import org.springframework.web.client.RestTemplate;
 
@@ -10,7 +10,7 @@ public class TimesheetsAppTest {
 
     @Test
     public void embedded() {
-        App.main(new String[]{});
+        Application.main(new String[]{});
 
         String response = new RestTemplate().getForObject("http://localhost:8181/time-entries?userId=0", String.class);
 

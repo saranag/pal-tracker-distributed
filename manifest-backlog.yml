@@ -13,5 +13,6 @@ applications:
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
   - tracker-sso
+  - tracker-config-server
 
 
